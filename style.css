@@ -1,0 +1,136 @@
+/* 1. Global Reset & Fonts */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* 2. Container Card Styling (Teeno pages ke containers par apply hoga) */
+#inputs-container,
+#welcome-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Welcome Container thoda bada aur center aligned hoga */
+#welcome-container {
+    max-width: 500px;
+    align-items: center;
+    text-align: center;
+}
+
+/* 3. Headings Styling */
+h1 {
+    color: #333333;
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* Input Fields ke upar jo text hai */
+h3 {
+    color: #4a5568;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: -5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Welcome page ke user details ki styling */
+#welcome-container h3 {
+    background-color: #f7fafc;
+    border-left: 4px solid #667eea;
+    padding: 12px;
+    width: 100%;
+    border-radius: 0 8px 8px 0;
+    text-align: left;
+    text-transform: none;
+    font-size: 16px;
+    color: #2d3748;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+/* 4. Input Fields Styling */
+input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    color: #2d3748;
+}
+
+input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.15);
+}
+
+/* 5. Buttons Styling (Sign Up, Log In, Log Out) */
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #5a67d8;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Log Out Button unique color styling */
+#logout-button {
+    background-color: #e53e3e;
+}
+
+#logout-button:hover {
+    background-color: #c53030;
+}
+
+/* 6. Links (Anchor Tags) Styling */
+a {
+    color: #667eea;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 10px;
+    transition: color 0.2s ease;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #4c51bf;
+    text-decoration: underline;
+}
